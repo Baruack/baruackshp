@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baruak Shipping - Delivering Excellence</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #002244;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1rem;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80') no-repeat center center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 3rem;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .services, .about, .contact, .testimonials, .faq, .tracking {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services h2, .about h2, .contact h2, .testimonials h2, .faq h2, .tracking h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .services .service-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .service-card {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            min-width: 250px;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: scale(1.05);
+        }
+
+        .service-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .service-card p {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        .about p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .contact input, .contact textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .contact button {
+            padding: 10px 20px;
+            background-color: #003366;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .contact button:hover {
+            background-color: #002244;
+        }
+
+        .testimonials .testimonial-cards {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .testimonial-card {
+            background: white;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 30%;
+            min-width: 250px;
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #666;
+        }
+
+        .testimonial-card h4 {
+            margin-top: 10px;
+            color: #003366;
+        }
+
+        .faq .faq-item {
+            background: white;
+            padding: 20px;
+            margin: 10px auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            text-align: left;
+            cursor: pointer;
+        }
+
+        .faq .faq-item h3 {
+            margin: 0;
+            font-size: 1.2rem;
+        }
+
+        .faq .faq-item p {
+            display: none;
+            margin-top: 10px;
+            color: #666;
+        }
+
+        .tracking #map {
+            height: 400px;
+            width: 80%;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        footer {
+            background-color: #002244;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 40px;
+        }
+
+        footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Baruak Shipping</h1>
+        <p>Delivering Excellence Across the Seas</p>
+    </header>
+
+    <!-- Navigation -->
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#tracking">Track Shipment</a>
+        <a href="#testimonials">Testimonials</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h2>Your Trusted Partner in Global Shipping</h2>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Container Shipping</h3>
+                <p>Efficient and reliable container shipping services worldwide.</p>
+            </div>
+            <div class="service-card">
+                <h3>Logistics Solutions</h3>
+                <p>Customized logistics solutions tailored to your needs.</p>
+            </div>
+            <div class="service-card">
+                <h3>Cargo Tracking</h3>
+                <p>Real-time tracking for all your shipments.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>
+            Baruak Shipping is a leading global shipping company dedicated to providing exceptional service and innovative solutions. With decades of experience, we ensure your cargo reaches its destination safely and on time.
+        </p>
+    </section>
+
+    <!-- Tracking Section -->
+    <section id="tracking" class="tracking">
+        <h2>Track Your Shipment</h2>
+        <div id="map"></div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="testimonial-cards">
+            <div class="testimonial-card">
+                <p>"Baruak Shipping has been a reliable partner for our global logistics needs. Highly recommended!"</p>
+                <h4>- John Doe, CEO of XYZ Corp</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Their real-time tracking system is a game-changer. Great service!"</p>
+                <h4>- Jane Smith, Logistics Manager</h4>
+            </div>
+            <div class="testimonial-card">
+                <p>"Efficient, professional, and always on time. Thank you, Baruak Shipping!"</p>
+                <h4>- Michael Brown, Importer</h4>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <h3>How do I track my shipment?</h3>
+            <p>You can track your shipment using our real-time tracking system. Enter your tracking number on the tracking page.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <h3>What are your shipping rates?</h3>
+            <p>Our rates depend on the type of cargo, destination, and service level. Contact us for a customized quote.</p>
+        </div>
+        <div class="faq-item" onclick="toggleFAQ(this)">
+            <h3>Do you offer insurance for shipments?</h3>
+            <p>Yes, we offer cargo insurance to protect your goods during transit.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Baruak Shipping. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for Interactive Features -->
+    <script>
+        // Toggle FAQ answers
+        function toggleFAQ(item) {
+            const answer = item.querySelector('p');
+            answer.style.display = answer.style.display === 'block' ? 'none' : 'block';
+        }
+
+        // Interactive Map (using Leaflet.js)
+        const map = L.map('map').setView([20, 0], 2);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '© OpenStreetMap contributors'
+        }).addTo(map);
+
+        // Add a sample shipping route
+        const route = L.polyline(
+            [[51.505, -0.09], [40.7128, -74.0060], [35.6895, 139.6917]],
+            { color: 'blue' }
+        ).addTo(map);
+    </script>
+    <!-- Leaflet.js for Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+</body>
+</html>
